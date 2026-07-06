@@ -566,40 +566,42 @@
 
     /* Hero 手機版：上下堆疊，文字在上，照片在下 */
     #hero {
-      height: auto;
-      min-height: unset;
-      max-height: unset;
-      padding-bottom: 0;
+      height: auto !important;
+      min-height: unset !important;
+      max-height: unset !important;
+      padding-bottom: 0 !important;
     }
     .hero-inner {
-      flex-direction: column;
-      align-items: center;
-      height: auto;
-      padding: 36px 24px 0;
+      flex-direction: column !important;
+      align-items: center !important;
+      height: auto !important;
+      padding: 36px 24px 0 !important;
     }
     .hero-text {
-      width: 100%;
-      padding-left: 0;
-      text-align: center;
-      align-items: center;
+      width: 100% !important;
+      padding-left: 0 !important;
+      text-align: center !important;
+      align-items: center !important;
     }
     .hero-image {
-      position: relative;
-      top: auto; bottom: auto; right: auto;
-      width: 85%;
-      height: 70vw;
-      max-height: 420px;
-      margin: 20px auto 0;
-      overflow: visible;
+      position: relative !important;
+      top: auto !important;
+      bottom: auto !important;
+      right: auto !important;
+      width: 85% !important;
+      height: 70vw !important;
+      max-height: 420px !important;
+      margin: 20px auto 0 !important;
+      overflow: visible !important;
     }
     .hero-portrait {
-      position: relative;
-      height: 100%;
-      width: auto;
-      max-width: 100%;
-      bottom: auto;
-      right: auto;
-      margin: 0 auto;
+      position: relative !important;
+      height: 100% !important;
+      width: auto !important;
+      max-width: 100% !important;
+      bottom: auto !important;
+      right: auto !important;
+      margin: 0 auto !important;
     }
 
     section { padding: 70px 24px; }
