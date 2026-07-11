@@ -22,7 +22,6 @@
     <li><a href="#about">關於我</a></li>
     <li><a href="#portfolio">作品集</a></li>
     <li><a href="#price">價目表</a></li>
-    <li><a href="#process">預約諮詢</a></li>
     <li><a href="#footer">聯絡我</a></li>
   </ul>
   <div class="nav-icons">
@@ -44,8 +43,8 @@
       <h1>妝點自信・綻放妳的美</h1>
       <p class="en-script">Be your own kind of beautiful</p>
       <p class="hero-services">專業彩妝服務｜新娘秘書｜特殊彩妝｜個人彩妝教學</p>
-      <a href="#" class="hero-cta" onclick="openModal(); return false;">
-        <span>預約諮詢 →</span>
+      <a href="https://lin.ee/Wu8jok6" target="_blank" class="hero-cta">
+        <span>LINE 預約諮詢 →</span>
       </a>
     </div>
     <div class="hero-image">
@@ -110,6 +109,25 @@
   </div>
 </section>
 
+<!-- PHOTOGRAPHER -->
+<section id="photographer">
+  <div class="section-title">
+    <h2>合作攝影師</h2>
+    <p class="en">PHOTOGRAPHER</p>
+    <div class="divider"></div>
+  </div>
+  <div class="about-inner">
+    <div class="photographer-photo"></div>
+    <div class="about-content">
+      <h3><a href="https://sedonalin.github.io/index.html" target="_blank" class="photographer-name">Sedona</a></h3>
+      <p class="en-sub">Photographer</p>
+      <p>相信每一個瞬間都有它的故事。<br>
+      喜歡自然光、真實的情感與細膩的細節，<br>
+      用鏡頭記錄你生命中最重要的時刻。</p>
+    </div>
+  </div>
+</section>
+
 <!-- PORTFOLIO -->
 <section id="portfolio">
   <div class="section-title">
@@ -119,9 +137,7 @@
   </div>
   <div class="portfolio-filters">
     <button class="filter-btn active" data-filter="all">全部</button>
-    <button class="filter-btn" data-filter="bride">新娘秘書</button>
     <button class="filter-btn" data-filter="special">特殊彩妝</button>
-    <button class="filter-btn" data-filter="daily">日常妝容</button>
     <button class="filter-btn" data-filter="commercial">商業拍攝</button>
     <button class="filter-btn" data-filter="stage">舞台妝髮</button>
     <button class="filter-btn" data-filter="male">男生妝髮</button>
@@ -130,30 +146,6 @@
     <button class="filter-btn" data-filter="cosplay">Cosplay</button>
   </div>
   <div class="portfolio-grid" id="portfolioGrid">
-    <div class="portfolio-item" onclick="lbOpen(this)" data-category="bride">
-      <div class="portfolio-thumb card-1">
-        <span class="face-icon">👰</span>
-      </div>
-      <div class="portfolio-overlay"><span>新娘秘書</span></div>
-    </div>
-    <div class="portfolio-item" onclick="lbOpen(this)" data-category="daily">
-      <div class="portfolio-thumb card-2">
-        <span class="face-icon">💄</span>
-      </div>
-      <div class="portfolio-overlay"><span>日常妝容</span></div>
-    </div>
-    <div class="portfolio-item" onclick="lbOpen(this)" data-category="bride">
-      <div class="portfolio-thumb card-3">
-        <span class="face-icon">🌸</span>
-      </div>
-      <div class="portfolio-overlay"><span>新娘秘書</span></div>
-    </div>
-    <div class="portfolio-item" onclick="lbOpen(this)" data-category="daily">
-      <div class="portfolio-thumb card-4">
-        <span class="face-icon">✨</span>
-      </div>
-      <div class="portfolio-overlay"><span>日常妝容</span></div>
-    </div>
     <div class="portfolio-item" onclick="lbOpen(this)" data-category="special">
       <div class="portfolio-thumb card-5" style="background:none; padding:0;">
         <img src="img/special-makeup-1.jpg" alt="特殊彩妝作品" style="width:100%;height:100%;object-fit:cover;object-position:center top;">
@@ -388,41 +380,6 @@
   <p class="price-note">※ 以上價格僅供參考，實際依需求與內容調整</p>
 </section>
 
-<!-- PROCESS -->
-<section id="process">
-  <div class="section-title">
-    <h2>預約流程</h2>
-    <p class="en">HOW IT WORKS</p>
-    <div class="divider"></div>
-  </div>
-  <div class="process-steps">
-    <div class="process-step">
-      <div class="step-num">01</div>
-      <h4>線上預約</h4>
-      <p>填寫表單<br>立即預約</p>
-    </div>
-    <div class="process-step">
-      <div class="step-num">02</div>
-      <h4>諮詢討論</h4>
-      <p>了解需求<br>與期望</p>
-    </div>
-    <div class="process-step">
-      <div class="step-num">03</div>
-      <h4>專屬服務</h4>
-      <p>打造完美<br>妝容</p>
-    </div>
-    <div class="process-step">
-      <div class="step-num">04</div>
-      <h4>自信綻放</h4>
-      <p>享受每個<br>重要時刻</p>
-    </div>
-  </div>
-  <div style="text-align:center; margin-top:50px;">
-    <button class="hero-cta" onclick="openModal()" style="display:inline-flex;">
-      <span>立即預約諮詢 →</span>
-    </button>
-  </div>
-</section>
 
 <!-- FOOTER -->
 <footer id="footer">
@@ -450,66 +407,10 @@
   </div>
 </footer>
 
-<!-- BOOKING MODAL -->
-<div class="modal-overlay" id="modal" onclick="handleOverlayClick(event)">
-  <div class="modal">
-    <button class="modal-close" onclick="closeModal()">✕</button>
-    <h3>預約諮詢</h3>
-    <p class="en">Book a Consultation</p>
-    <div class="form-group">
-        <label>姓名</label>
-        <input type="text" name="姓名" placeholder="您的姓名" required>
-      </div>
-      <div class="form-group">
-        <label>聯絡方式（擇一填寫即可）</label>
-        <div style="display:flex; flex-direction:column; gap:10px;">
-          <div style="display:flex; align-items:center; gap:10px;">
-            <span style="min-width:70px; font-size:13px; color:var(--text-mid); letter-spacing:1px;">LINE</span>
-            <input type="text" name="LINE" placeholder="LINE ID" style="flex:1; padding:10px 14px; border:1px solid var(--sand); font-family:'Noto Serif TC',serif; font-size:14px; border-radius:2px; outline:none;">
-          </div>
-          <div style="display:flex; align-items:center; gap:10px;">
-            <span style="min-width:70px; font-size:13px; color:var(--text-mid); letter-spacing:1px;">Instagram</span>
-            <input type="text" name="Instagram" placeholder="@IG 帳號" style="flex:1; padding:10px 14px; border:1px solid var(--sand); font-family:'Noto Serif TC',serif; font-size:14px; border-radius:2px; outline:none;">
-          </div>
-          <div style="display:flex; align-items:center; gap:10px;">
-            <span style="min-width:70px; font-size:13px; color:var(--text-mid); letter-spacing:1px;">E-mail</span>
-            <input type="text" name="Email" placeholder="example@mail.com" style="flex:1; padding:10px 14px; border:1px solid var(--sand); font-family:'Noto Serif TC',serif; font-size:14px; border-radius:2px; outline:none;">
-          </div>
-        </div>
-      </div>
-    <div class="form-group">
-      <label>服務項目</label>
-      <select name="服務項目">
-        <option value="">請選擇服務項目</option>
-        <option>新娘秘書（單妝）</option>
-        <option>新娘秘書（含妝髮）</option>
-        <option>特殊彩妝／藝術彩繪</option>
-        <option>親友妝髮</option>
-        <option>個人彩妝教學（1對1）</option>
-        <option>個人寫真妝髮</option>
-        <option>Cosplay 造型妝髮</option>
-        <option>男生妝髮造型</option>
-        <option>舞台／演出妝髮</option>
-        <option>商業／平面／廣告妝髮</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label>預計日期</label>
-      <input type="date" name="預計日期">
-    </div>
-    <div class="form-group">
-      <label>其他說明</label>
-      <textarea name="其他說明" placeholder="請描述您的需求與期望..."></textarea>
-    </div>
-    <button class="btn-submit" onclick="submitForm()">送出預約</button>
-  </div>
-</div>
 
 <!-- BACK TO TOP -->
 <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
-<!-- TOAST -->
-<div class="toast" id="toast">✓ 預約成功！我們將盡快與您聯繫。</div>
 
 <script src="js/main.js"></script>
 
