@@ -686,6 +686,9 @@
       text-align: center !important;
       align-items: center !important;
     }
+    .hero-cta {
+      align-self: center !important;
+    }
     .hero-image {
       position: relative !important;
       top: auto !important;
